@@ -15,16 +15,35 @@ For project 3, your goal is two-fold:
 Pushshift's API is fairly straightforward. For example, if I want the posts from [`/r/boardgames`](https://www.reddit.com/r/boardgames), all I have to do is use the following url: https://api.pushshift.io/reddit/search/submission?subreddit=boardgames
 
 ---
-## Checkpoints and Advice
+## Checkpoints
+|Date|Status|Comments|
+|---|---|---|
+|900 Mon, 12 Dec. |Chosen subreddits|Submit to [this google doc*](https://docs.google.com/spreadsheets/d/1G1mwSxURjKPz85FyMuOqDVfGPAjK7ZuwpqV88svC8HM/edit?usp=sharing) and we will notify you of any questions/final approval|
+|1700  Mon, 12 Dec.|Function for data collection built|We will have time for this on Monday afternoon|
+|900 Tues., 13 Dec.|Data collected||
+|1700 Fri., 16 Dec.|Cleaning completed||
+|900 Mon., 19 Dec.|EDA completed||
+|1700 Weds., 21 Dec.|Modeling completed||
+|1700 Thurs., 22 Dec.|Evaluation completed||
+|EOD Thurs., 22 Dec.|Presentation completed||
+|900 Fri., 23 Dec.|All materials submitted|Presentations will begin at 930|
+
+*Note: We ask that you include each subreddit, the total number of posts in each, as well as the number of selftext posts
+To do access this information, you will use the PushShift's submissions endpoint and make use of the `subreddit`, `metadata`, `size`, and `is_self` parameters. For example, to access the number of total posts in r/boardgames, you would use the url*
+```
+https://api.pushshift.io/reddit/search/submission?subreddit=boardgames&metadata=true&size=0
+```
+*and scroll down to find the value for `total results`. To find the number of posts with selftext (text in the body of the submission), you would add on `&is_self=true` to set the `is_self` parameter to true.*
+
+## Advice
 
 If you aren't familiar with [reddit](https://www.reddit.com/), go check it out and browse different subreddits. Each subreddit is like a forum on a different topic. [Here's a list of subreddits by topic.](https://www.reddit.com/r/ListOfSubreddits/wiki/listofsubreddits)
 
 - In your project you can classify posts, comments, titles, or some combination of those things. What you choose will partly determine how difficult your data cleaning will be and how challenging the classification task will be for your algorithms. In your presentation and executive summary, **tell us what you used**.
 - You can also include other information from posts or comments as features, but you must include some text.
 - You can make the project more challenging by choosing subreddits that are more similar.
-- **By 9 AM Pacific, Monday, 12/12/2022, you must input your chosen subreddits into [this google doc.](https://docs.google.com/spreadsheets/d/1G1mwSxURjKPz85FyMuOqDVfGPAjK7ZuwpqV88svC8HM/edit?usp=sharing) You may not choose the same two subreddits as one of your peers: first come, first served.** Please include a breakdown of the post count for each as well.
-- You should aim to have a function built to pull down data from the API by EOD 12/12/22 as well.
-- The more data you can pull the better for your classifier. **You will want data from at least 3000 unique, non-null posts from each subreddit.**
+- The more data you can pull the better for your classifier. **You will want data from at least 3000 unique, non-null posts from each subreddit.** 
+
 
 ---
 
