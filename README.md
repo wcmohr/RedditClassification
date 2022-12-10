@@ -23,9 +23,8 @@ Pushshift's API is fairly straightforward. For example, if I want the posts from
 |900 Tues., 13 Dec.|Data collected||
 |1700 Fri., 16 Dec.|Cleaning completed||
 |900 Mon., 19 Dec.|EDA completed||
-|1700 Weds., 21 Dec.|Modeling completed||
-|1700 Thurs., 22 Dec.|Evaluation completed||
-|EOD Thurs., 22 Dec.|Presentation completed||
+|1700 Weds., 21 Dec.|Modeling and evaluation completed||
+|EOD Thurs., 22 Dec.|Notebooks cleaned and presentation completed||
 |900 Fri., 23 Dec.|All materials submitted|Presentations will begin at 930|
 
 *Note: We ask that you include each subreddit, the total number of posts in each, as well as the number of selftext posts
