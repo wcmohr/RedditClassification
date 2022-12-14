@@ -1,0 +1,20 @@
+Considerations for Data Cleaning
+
+- [Weird] punctuation  -- get rid of most punctuation
+- Stopwords
+- typos
+- removed/redacted/deleted posts
+- selftext -- maybe remove if data unbalanced
+- Remove duplicated posts .dropduplicates(subset = ['selftext','title'])
+- [non-signifying] numerics(signifying: '18thCentury')
+- URLs
+- emoticon, emoji
+- Extra spaces
+- Proper names
+- Lemmatizing
+- remove identifying info "science, technology"
+- other languages stop words? -- low priority
+
+- Lemmatization, stems
+- Roughly equal class proportions (ideally)
+- Consider dropping on submission length(title + selftext)
