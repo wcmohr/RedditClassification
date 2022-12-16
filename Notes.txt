@@ -1,0 +1,31 @@
+Modeling: Try as many classification options as possible.
+
+
+
+Considerations for Data Cleaning
+
+- [Weird] punctuation  -- get rid of most punctuation.  issue - i got rid of punctuation, but need to instead split words on hyphens first 
+
+- Stopwords:  is this in large part an eda exercise, in terms of finding out which words are equally common in both reddits, or is it about finding words that are giveaways, such as the subreddit name?
+
+
+- typos: I'm not sure I'm gonna tackle this element.
+
+- removed/redacted/deleted posts -- I don't know how to tell if a post has been removed, etc.
+
+- selftext -- maybe remove if data unbalanced : I don't seem to have any selftext in my subreddits.
+
+
+- Remove duplicated posts .dropduplicates(subset = ['selftext','title']): this is quick and easy
+
+- [non-signifying] numerics(signifying: '18thCentury'):Im not sure how to figure this out
+
+- URLs:  seems like something scipy can do, otherwise I could copy a regex function from online, but is that allowed?
+
+- emoticon, emoji:  after removing punctuation, I don't think I will catch this
+
+- Extra spaces: are these blanks in countvectorizer?
+
+- Proper names: seems like a scipy job?
+- Lemmatizing : not sure, maybe scipy or another package
+
