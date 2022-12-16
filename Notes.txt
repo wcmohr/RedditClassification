@@ -29,3 +29,11 @@ Considerations for Data Cleaning
 - Proper names: seems like a scipy job?
 - Lemmatizing : not sure, maybe scipy or another package
 
+
+
+12/16/22 -- 
+Lemmatizing (nltk wordnet ), stop words: most frequent words that shouldn't be there.  
+tables are okay in this presentation
+where was the model wrong
+Finished project needing iteration is a whole lot better than an unfinished project.
+What levers lead to what improvements.
