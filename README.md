@@ -14,6 +14,8 @@ I used part of speech and character count statistics for the initial modeling ap
 
 I tested a number of modeling packages including logistic regression and random forests, but the best model proved to be xgboost tuned through gridsearch to arrive at the optimal eta.  The text vectorizer that I used was tfidf, as this generated features with weights according to their likely significance to a model accourding to their frequency.
 
+Stacking did not improve results, so I chose to combine data and analyze after column transforming.
+
 #### Conclusions
 
 The findings of this report demonstrate that it is possible for a model to distinguish, with substantial improvement over the baseline, between posts from the science and technology subreddits.
